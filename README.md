@@ -49,10 +49,11 @@ php artisan migrate:fresh --seed
 php artisan serve
 ```
 
-###### Dosen pembimbing:
+## Contributors
+###### Supervisor:
 ANDERIES, B.Eng., S.Kom., M.Kom. - D6657
 
-###### Anggota:
+###### Member:
 Adji Nouvaldi Ramadhan - 2440063050
 
 Adriel Pratama Montiley - 2440067093
