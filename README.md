@@ -22,6 +22,7 @@ git clone https://github.com/Nouvaldi/GameOn
 1. Open and start XAMPP
 2. Create a database with your preferred name
 3. Open the project using Visual Studio Code
+
 > In terminal
 4. Setup Laravel:
 ```
@@ -50,16 +51,12 @@ php artisan serve
 ```
 
 ## Contributors
-###### Supervisor:
-ANDERIES, B.Eng., S.Kom., M.Kom. - D6657
+> Supervisor:
+- ANDERIES, B.Eng., S.Kom., M.Kom. - D6657
 
-###### Member:
-Adji Nouvaldi Ramadhan - 2440063050
-
-Adriel Pratama Montiley - 2440067093
-
-Anthony Falah - 2440010391
-
-Gregorius Gilang Threesulistianto - 2440069281
-
-Krisna Hadi Saputra - 2440063744
+> Members:
+- Adji Nouvaldi Ramadhan - 2440063050
+- Adriel Pratama Montiley - 2440067093
+- Anthony Falah - 2440010391
+- Gregorius Gilang Threesulistianto - 2440069281
+- Krisna Hadi Saputra - 2440063744
