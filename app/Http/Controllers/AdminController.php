@@ -50,7 +50,9 @@ class AdminController extends Controller
             'price' => 'required|integer|min:1000',
             'discount' => 'required|integer|min:0|max:100',
             'size' => 'required|numeric|min:0.1',
-            'image' => 'required|mimes:png,jpg,jpeg'
+            'image' => 'required|mimes:png,jpg,jpeg',
+            'developer' => 'required|min:5|max:50',
+            'publisher' => 'required|min:5|max:50'
         ]);
 
         $total = $request->price - ($request->price * ($request->discount / 100));
@@ -69,7 +71,9 @@ class AdminController extends Controller
                 'total' => $total,
                 'size' => $request->size,
                 'image' => $fileName,
-                'spec_id' => $request->specs
+                'spec_id' => $request->specs,
+                'developer' => $request->developer,
+                'publisher' => $request->publisher
             ]);
 
             return redirect('/admin/manage-games');
@@ -85,7 +89,9 @@ class AdminController extends Controller
             'price' => 'required|integer|min:1000',
             'discount' => 'required|integer|min:0|max:100',
             'size' => 'required|numeric|min:0.1',
-            'image' => 'required|mimes:png,jpg,jpeg'
+            'image' => 'required|mimes:png,jpg,jpeg',
+            'developer' => 'required|min:5|max:50',
+            'publisher' => 'required|min:5|max:50'
         ]);
 
         $total = $request->price - ($request->price * ($request->discount / 100));
@@ -107,7 +113,9 @@ class AdminController extends Controller
                 'total' => $total,
                 'size' => $request->size,
                 'image' => $fileName,
-                'spec_id' => $request->specs
+                'spec_id' => $request->specs,
+                'developer' => $request->developer,
+                'publisher' => $request->publisher
             ]);
 
             return redirect('/admin/update/' . $id)->with('success', 'Game successfully updated!');

@@ -14,7 +14,7 @@
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">Id</th>
+                            <th scope="col">ID</th>
                             <th scope="col">Title</th>
                             <th scope="col">Category</th>
                             <th scope="col">Image</th>
@@ -33,8 +33,8 @@
                                 <th scope="row">{{ $data->id }}</th>
                                 <td>{{ $data->title }}</td>
                                 <td>{{ $data->category->name }}</td>
-                                <td style="max-height: 10vh; overflow: hidden;">
-                                    <img src="{{ asset('storage/game-images/' . $data->image) }}" alt="" class="d-block w-100">
+                                <td class="col-2" style="height: 10vw;">
+                                    <img src="{{ asset('storage/game-images/' . $data->image) }}" alt="" class="card-img w-100 h-100" style="object-fit: cover">
                                 </td>
                                 <td>{{ $data->discount }}%</td>
                                 <td>IDR. {{ $data->price }}</td>

@@ -16,6 +16,15 @@
             </div>
             <div class="card-body pt-0">
                 <div class="row row-cols-4 g-2">
+                    @if (count($game_data) == 0)
+                        <div class="col-6 mx-auto text-center">
+                            <div class="card border-0 text-bg-dark">
+                                <div class="card-body">
+                                    <h6>Empty, more games will be released.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
                     @foreach ($game_data as $data)
                         <div class="col">
                             <a href="/detail/{{ $data->id }}/{{ $data->title }}" class="text-dark text-decoration-none">

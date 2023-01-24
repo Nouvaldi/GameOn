@@ -29,5 +29,17 @@ class CategorySeeder extends Seeder
         DB::table('categories')->insert([
             'name' => "RPG"
         ]);
+
+        DB::table('categories')->insert([
+            'name' => "Action"
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => "FPS"
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => "Sports"
+        ]);
     }
 }

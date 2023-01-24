@@ -41,7 +41,7 @@
                 <form action="/admin/update/{{ $game_data->id }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row g-3">
-                        <div class="col-md-8">
+                        <div class="col-md-3">
                             <label for="title" class="form-label">Title</label>
                             <input type="text" class="form-control @error('title') is-invalid @enderror" name="title"
                                 id="title" value="{{ $game_data->title }}">
@@ -51,7 +51,27 @@
                                 </div>
                             @enderror
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            <label for="developer" class="form-label">Developer</label>
+                            <input type="text" class="form-control @error('developer') is-invalid @enderror" name="developer"
+                                id="developer" value="{{ $game_data->developer }}">
+                            @error('developer')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="col-md-3">
+                            <label for="publisher" class="form-label">Publisher</label>
+                            <input type="text" class="form-control @error('publisher') is-invalid @enderror" name="publisher"
+                                id="publisher" value="{{ $game_data->publisher }}">
+                            @error('publisher')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        <div class="col-md-3">
                             <label for="category" class="form-label">Category</label>
                             <select class="form-select" name="category" id="category">
                                 @foreach ($category_data as $data)
